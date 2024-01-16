@@ -56,7 +56,21 @@ table {
 	--white: #ffffff;
 }
 body {
+	max-width: 1200px;
+	width: 100%;
 	margin: 0px auto;
 	background-color: var(--dark-blue);
 	color: var(--white);
+	border: #4cff05 solid 1px;
+}
+div {
+	border: #ffffff dotted 1px;
+	width: 80%;
+	margin: auto;
+}
+.FlexHeader {
+	background-color: red;
+}
+.FlexContent {
+	background-color: orange;
 }
