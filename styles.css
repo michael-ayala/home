@@ -50,6 +50,13 @@ table {
 }
 
 /*  Global settings      */ 
-h1{
-	font-size: 2rem;
+:root {
+	font-size: 16px;
+	--dark-blue: #000080;
+	--white: #ffffff;
+}
+body {
+	margin: 0px auto;
+	background: var(--dark-blue);
+	color: var(--white);
 }
