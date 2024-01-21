@@ -57,7 +57,7 @@ table {
 }
 body {
 	max-width: 1200px;
-	width: 100%;
+	width: 98%;
 	margin: 0px auto;
 	background-color: var(--white);
 	color: var(--dark-blue);
