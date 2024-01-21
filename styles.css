@@ -59,7 +59,7 @@ body {
 	max-width: 1200px;
 	width: 98%;
 	margin: 0px auto;
-	background-color: var(--white);
+	background-color: #000080;
 	color: var(--dark-blue);
 	border: #4cff05 solid 1px;
 }
@@ -69,6 +69,7 @@ div {
 	margin: auto;
 }
 .FlexHeader {
+	text-align: center;
 	background-color: rgb(255, 255, 255);
 	
 }
@@ -85,8 +86,12 @@ div {
 	/*margin: 5px 21px;*/
 	/*      top right bottom left   */
 	/*border: #aaaacaa8 solid 1px;*/
-	background-color: rgba(247, 247, 247, 0.801);
+	background-color: rgb(247, 247, 247);
 }
 .FlexContent p {
 	padding: 10px 2% 10px 10px;
+}
+.FlexFooter{
+	text-align: center;
+	background-color: #ffffff;
 }
