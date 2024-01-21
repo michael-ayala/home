@@ -48,7 +48,10 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+@font-face {
+	font-family: myHeaderFont;
+	src: url(./fonts/felixtitling.ttf);
+}
 /*  Global settings      */ 
 :root {
 	font-size: 16px;
@@ -59,27 +62,32 @@ body {
 	max-width: 1200px;
 	width: 98%;
 	margin: 0px auto;
-	background-color: #000080;
+	background-color: #effafa;
 	color: var(--dark-blue);
-	border: #4cff05 solid 1px;
+	border: #cee4d0 solid 1px;
 }
 div {
-	border: #ffffff dotted 1px;
+	/*border: #690e0e dotted 1px;*/
 	width: 94%;
 	margin: auto;
 }
+
 .FlexHeader {
 	text-align: center;
 	background-color: rgb(255, 255, 255);
 	
 }
+.FlexHeader h1 {
+	font-family: myHeaderFont;
+	font-size: 2rem;
+}
 .FlexItem {
 	padding: 10px 2% 10px 10px;
-	border: #aaaacaa8 solid 1px;
+	border: #aac9caa8 solid 1px;
 }
 .FlexWrapper {
 	/*margin-left: 5px;*/
-	padding: 10px 2% 10px 10px;
+	/*padding: 10px 2% 10px 10px;*/
 	border: #aaaacaa8 solid 1px;
 }
 .FlexContent {
