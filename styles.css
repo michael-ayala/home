@@ -59,18 +59,30 @@ body {
 	max-width: 1200px;
 	width: 100%;
 	margin: 0px auto;
-	background-color: var(--dark-blue);
-	color: var(--white);
+	background-color: var(--white);
+	color: var(--dark-blue);
 	border: #4cff05 solid 1px;
 }
 div {
 	border: #ffffff dotted 1px;
-	width: 80%;
+	width: 94%;
 	margin: auto;
 }
 .FlexHeader {
-	background-color: red;
+	background-color: rgb(255, 255, 255);
+	
+}
+.FlexItem {
+	padding: 10px 2% 10px 10px;
+	border: #aaaacaa8 solid 1px;
+}
+.FlexWrapper {
+	padding: 10px 2% 10px 10px;
+	border: #aaaacaa8 solid 1px;
 }
 .FlexContent {
-	background-color: orange;
+	/*margin: 5px 21px;*/
+	/*      top right bottom left   */
+	/*border: #aaaacaa8 solid 1px;*/
+	background-color: rgba(247, 247, 247, 0.801);
 }
