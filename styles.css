@@ -83,10 +83,20 @@ div {
 	text-align: center;
 	background-color: var(--white);
 	border-radius: 0px 0px 3px 3px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	
+}
+.FlexHeader img {
+	
+	border: #114b48 solid 1px;
 }
 .FlexHeader h1 {
 	font-family: myHeaderFont;
 	font-size: 2rem;
+	border: #114b48 solid 1px;
+	flex: 50%;
 }
 .FlexItem {
 	/* padding: 10px 2% 10px 10px; */
