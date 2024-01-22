@@ -88,15 +88,18 @@ div {
 	flex-wrap: nowrap;
 	
 }
-.FlexHeader img {
-	width: 100px;
-	border: #114b48 solid 1px;
-}
-.FlexHeader h1 {
+
+h1 {
 	font-family: myHeaderFont;
-	font-size: 2rem;
+	font-size: 2.2rem;
 	border: #114b48 solid 1px;
 	flex: 50%;
+}
+h2{
+	font-size: 1.8rem;
+}
+h3{
+	font-size: 1.4rem;
 }
 .FlexItem {
 	/* padding: 10px 2% 10px 10px; */
@@ -122,17 +125,19 @@ div {
 	color: #761004;
 	padding: 10px 2% 10px 10px;
 }
+.FlexContent img {
+	width: 100px;
+	border: #114b48 solid 1px;
+}
 .FlexFooter{
 	text-align: center;
 	background-color: #bfbfbd;
 	border-radius: 3px 3px 0px 0px;
 }
-sm {
-	font-size: .8rem;
-}
-.copy{
+#copy{
 	color: #761004;
-	font-size: .6rem;
+	font-size: .75rem;
+
 }
 @media screen and (min-width: 350px) {
 	.FlexHeader img {
