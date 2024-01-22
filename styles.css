@@ -89,7 +89,7 @@ div {
 	
 }
 .FlexHeader img {
-	
+	width: 100px;
 	border: #114b48 solid 1px;
 }
 .FlexHeader h1 {
@@ -126,4 +126,10 @@ div {
 	text-align: center;
 	background-color: #bfbfbd;
 	border-radius: 3px 3px 0px 0px;
+}
+@media screen and (min-width: 350px) {
+	.FlexHeader img {
+		width: 125px;
+		border: #114b48 solid 1px;
+	}
 }
