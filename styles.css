@@ -125,9 +125,32 @@ h3{
 	color: #761004;
 	padding: 10px 2% 10px 10px;
 }
-.FlexContent img {
-	width: 100px;
+.Intro {
+	display: grid;
+	justify-content: stretch;
+	grid-template-columns: 150px auto;
+	grid-template-rows: auto;
+	grid-template-areas: "head2 head2"
+						 "head3 head3"
+						 "para image"
+						 "para .";
+
+}
+.Intro h2{
+	grid-area: head2;
+}
+.Intro h3{
+	grid-area: head3;
+}
+.Intro img {
+	width: 40vw;
+	max-width: 200px;
 	border: #114b48 solid 1px;
+	grid-area: image;
+	place-self: center;
+}
+.Intro p {
+	grid-area: para;
 }
 .FlexFooter{
 	text-align: center;
