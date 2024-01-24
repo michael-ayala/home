@@ -48,123 +48,160 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-@font-face {
-	font-family: myHeaderFont, serif;
-	src: url(./fonts/felixtitling.ttf);
+/* <uniquifier>: Use a uniquifier for the class name */
+/* <weight>: Use a value from 400 to 700 */
+
+p {
+  font-family: "Cabin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 /*  Global settings      */ 
 :root {
 	font-size: 16px;
-	--med-blue: #285059;
-	--dark-blue: #022326;
+	--med-blue: ##23288C;
+	--dark-blue: #181B59;
+	--very-drk-blue: #100227fb;
 	--light-gray: #bfbfbd;
-	--brown: #592b02;
-	--tan: #8c613b;
+	--teal: #27F2DE;
+	--light-blue: #E4F1F2;
+	--red: #F2134F;
 	--white: #ffffff;
+	--saturated-green: #6ac22f;
+	--saturated-teal:#24fff4;
+	
+	--black: #0D0D0D;
 }
 body {
 	max-width: 1200px;
 	width: 98%;
 	margin: 0px auto;
-	background-color: var(--white);
+	background-color: var(--light-blue);
 	color: var(--dark-blue);
 	/*border: #cee4d0 solid 1px;*/
-	font-family: Arial, Helvetica, sans-serif;
+	/*font-family: Arial, Helvetica, sans-serif;*/
+	font-family: serif;
 }
 
 div {
 	/*border: #690e0e dotted 1px;*/
 	width: 94%;
-	margin: auto;
-	
+	margin: 10px auto;
+	/*border: #b47603 solid 1.4px;*/
 }
-
-.FlexHeader {
+.Wrapper {
+	background-color: #074915;
+}
+.Header {
 	text-align: center;
-	background-color: var(--white);
-	border-radius: 0px 0px 3px 3px;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
+	background-color: #1f0e02;
+	color: #ff6600;
+	/*border-radius: 0px 0px 3px 3px;*/
 	
 }
 
 h1 {
-	font-family: myHeaderFont;
-	font-size: 2.2rem;
-	border: #114b48 solid 1px;
-	flex: 50%;
+	font-family: "Acme", sans-serif;
+	font-size: 3rem;
+	/*border: #4c3306 solid 1px;*/
 }
 h2{
+	font-family: "Cabin", sans-serif;
 	font-size: 1.8rem;
+	color: var(--saturated-green);
 }
 h3{
+
 	font-size: 1.4rem;
 }
-.FlexItem {
-	/* padding: 10px 2% 10px 10px; */
-	margin-bottom: 10px;
-	border: #aac9caa8 solid 1px;
-
+p {
+	/*font-family: "Signika Negative", sans-serif;*/
+	line-height: 20px;
+	border-bottom: #11f2f664 dashed .8px;
+	color: #b3ebe9;
+	padding-left: 5px;
+	padding-top: 5px;
+	padding-bottom: 8px;
 }
-.FlexWrapper {
+.Wrapper {
 	/*margin-left: 5px;*/
 	/*padding: 10px 2% 10px 10px;*/
 	border: #8a260aa8 solid 1px;
+	background-color: #140804fb;
 }
-.FlexContent {
+.Sample, .Content, .Contact {
+	background-color: #0f1e01fb;
+}
+.Content {
 	/*margin: 5px 21px;*/
 	/*      top right bottom left   */
 	/*border: #aaaacaa8 solid 1px;*/
-	background-color: rgba(244, 244, 239, 0.49);
+	
 	border-radius: 3px;
-	border: #8a260aa8 solid 1.4px;
+	border: #4c3306 solid 1.4px;
 }
-.FlexContent p {
-	/*background-color: #e1a789fe;*/
-	color: #761004;
-	padding: 10px 2% 10px 10px;
+.Sample{
+	border: #4c3306 solid 1.4px;
+}
+.Contact{
+	border: #4c3306 solid 1.4px;
+}
+#intro-p1{
+	
+	grid-area: para1;
+}
+#intro-p2{
+	grid-area: para2;
 }
 .Intro {
 	display: grid;
-	justify-content: stretch;
-	grid-template-columns: 150px auto;
+	/*justify-content: stretch;*/
+	grid-template-columns: 1fr auto;
 	grid-template-rows: auto;
-	grid-template-areas: "head2 head2"
-						 "head3 head3"
-						 "para image"
-						 "para .";
+	grid-template-areas: "head2 imag"
+						 "para1 imag"
+						 "para2 para2";
+						 
 
 }
 .Intro h2{
 	grid-area: head2;
-}
-.Intro h3{
-	grid-area: head3;
+	/*border: #8c613b 1px dotted;*/
 }
 .Intro img {
-	width: 40vw;
-	max-width: 200px;
-	border: #114b48 solid 1px;
-	grid-area: image;
-	place-self: center;
+	/*padding: 10px;*/
+	float: right;
+	width: calc(100vw/2);
+	max-width: 180px;
+	grid-area: imag;
+	/*box-shadow: 5px 7px 10px 2px #9b9d9d82 ;*/
+	/*place-self: center;*/
 }
-.Intro p {
-	grid-area: para;
+.clearfix::after {
+	content:"";
+	clear: both;
+	display: table;
 }
-.FlexFooter{
+
+.Footer{
 	text-align: center;
-	background-color: #bfbfbd;
-	border-radius: 3px 3px 0px 0px;
+	color:#1bd443;
+	
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: small;
 }
 #copy{
-	color: #761004;
+	color: #f9bd26;
 	font-size: .75rem;
+	font-size: small;
 
 }
 @media screen and (min-width: 350px) {
-	.FlexHeader img {
+	.Intro img {
 		width: 125px;
-		border: #114b48 solid 1px;
+		
 	}
 }
